@@ -48,3 +48,68 @@
 
 // Media Queries Overrides
 // @import "foundation/components/modules/mqueries";
+
+body {
+    background-color: #efefef;
+    background-image: url('../img/header-background.jpg');
+    background-repeat: repeat-x;
+    background-position: top;
+}
+
+nav {
+    color: #000;
+    background-color: #fff;
+
+    ul {
+        padding: 5px;
+        z-index: 30;
+        background-color: #fff;
+        width: 100%;
+        max-width: 626px; /* 940 * (2/3) */
+        margin-bottom: 0;
+    }
+
+    li {
+        display: inline;
+
+        &.active {
+            font-weight: bold;
+        }
+    }
+}
+
+header {
+    @media(max-width: 767px) {
+        padding-top: 20px;
+        text-align: center;
+
+        h1 {
+            font-size: 150%;
+        }
+
+        h3 {
+            font-size: 120%;
+        }
+    }
+    @media(min-width: 768px) {
+        padding-top: 70px;
+    }
+}
+
+h1, h3 {
+    color: #dedede;
+    text-shadow: 1px 1px #222;
+}
+
+.row {
+    width: 940px;
+}
+
+#logo-box {
+    @media(max-width: 767px) {
+
+        img {
+            height: 120px;
+        }
+    }
+}

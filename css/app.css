@@ -2724,7 +2724,7 @@ div.orbit-wrapper span.rotator {
   position: absolute;
   top: 0;
   left: -20px;
-  background: url('/images/foundation/orbit/rotator-black.png?1354019680') no-repeat;
+  background: url('/img/foundation/orbit/rotator-black.png?1354019680') no-repeat;
   z-index: 3;
 }
 /* line 27, ../../../../../../../usr/local/Cellar/ruby/1.9.3-p0/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
@@ -2746,7 +2746,7 @@ div.orbit-wrapper span.mask {
 div.orbit-wrapper span.mask.move {
   width: 40px;
   left: 0;
-  background: url('/images/foundation/orbit/timer-black.png?1354019680') repeat 0 0;
+  background: url('/img/foundation/orbit/timer-black.png?1354019680') repeat 0 0;
 }
 /* line 32, ../../../../../../../usr/local/Cellar/ruby/1.9.3-p0/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper span.pause {
@@ -2756,13 +2756,13 @@ div.orbit-wrapper span.pause {
   position: absolute;
   top: 0;
   left: 0;
-  background: url('/images/foundation/orbit/pause-black.png?1354019680') no-repeat;
+  background: url('/img/foundation/orbit/pause-black.png?1354019680') no-repeat;
   z-index: 4;
   opacity: 0;
 }
 /* line 33, ../../../../../../../usr/local/Cellar/ruby/1.9.3-p0/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper span.pause.active {
-  background: url('/images/foundation/orbit/pause-black.png?1354019680') no-repeat 0 -40px;
+  background: url('/img/foundation/orbit/pause-black.png?1354019680') no-repeat 0 -40px;
 }
 /* line 35, ../../../../../../../usr/local/Cellar/ruby/1.9.3-p0/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper div.timer:hover span.pause, div.orbit-wrapper span.pause.active {
@@ -2809,24 +2809,24 @@ div.orbit-wrapper div.slider-nav span {
 }
 /* line 48, ../../../../../../../usr/local/Cellar/ruby/1.9.3-p0/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper div.slider-nav span.right {
-  background: url('/images/foundation/orbit/right-arrow.png?1354019680');
+  background: url('/img/foundation/orbit/right-arrow.png?1354019680');
   background-size: 100%;
   right: 0;
 }
 /* line 49, ../../../../../../../usr/local/Cellar/ruby/1.9.3-p0/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 div.orbit-wrapper div.slider-nav span.left {
-  background: url('/images/foundation/orbit/left-arrow.png?1354019680');
+  background: url('/img/foundation/orbit/left-arrow.png?1354019680');
   background-size: 100%;
   left: 0;
 }
 
 /* line 54, ../../../../../../../usr/local/Cellar/ruby/1.9.3-p0/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 .lt-ie9 div.orbit-wrapper div.slider-nav span.right {
-  background: url('/images/foundation/orbit/right-arrow-small.png?1354019680');
+  background: url('/img/foundation/orbit/right-arrow-small.png?1354019680');
 }
 /* line 55, ../../../../../../../usr/local/Cellar/ruby/1.9.3-p0/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_orbit.scss */
 .lt-ie9 div.orbit-wrapper div.slider-nav span.left {
-  background: url('/images/foundation/orbit/left-arrow-small.png?1354019680');
+  background: url('/img/foundation/orbit/left-arrow-small.png?1354019680');
 }
 
 /* Bullet Nav ---------------------- */
@@ -2847,7 +2847,7 @@ ul.orbit-bullets li {
   cursor: pointer;
   color: #999999;
   text-indent: -9999px;
-  background: url('/images/foundation/orbit/bullets.jpg?1354019680') no-repeat 4px 0;
+  background: url('/img/foundation/orbit/bullets.jpg?1354019680') no-repeat 4px 0;
   width: 13px;
   height: 12px;
   overflow: hidden;
@@ -5883,5 +5883,76 @@ table.hide-for-medium {
   /* line 456, ../../../../../../../usr/local/Cellar/ruby/1.9.3-p0/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/scss/foundation/components/modules/_mqueries.scss */
   .top-bar ul > li.has-button a.button {
     margin: 0;
+  }
+}
+/* line 52, ../sass/app.scss */
+body {
+  background-color: #efefef;
+  background-image: url("../img/header-background.jpg");
+  background-repeat: repeat-x;
+  background-position: top;
+}
+
+/* line 59, ../sass/app.scss */
+nav {
+  color: #000;
+  background-color: #fff;
+}
+/* line 63, ../sass/app.scss */
+nav ul {
+  padding: 5px;
+  z-index: 30;
+  background-color: #fff;
+  width: 100%;
+  max-width: 626px;
+  /* 940 * (2/3) */
+  margin-bottom: 0;
+}
+/* line 72, ../sass/app.scss */
+nav li {
+  display: inline;
+}
+/* line 75, ../sass/app.scss */
+nav li.active {
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  /* line 81, ../sass/app.scss */
+  header {
+    padding-top: 20px;
+    text-align: center;
+  }
+  /* line 86, ../sass/app.scss */
+  header h1 {
+    font-size: 150%;
+  }
+  /* line 90, ../sass/app.scss */
+  header h3 {
+    font-size: 120%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 81, ../sass/app.scss */
+  header {
+    padding-top: 70px;
+  }
+}
+
+/* line 99, ../sass/app.scss */
+h1, h3 {
+  color: #dedede;
+  text-shadow: 1px 1px #222;
+}
+
+/* line 104, ../sass/app.scss */
+.row {
+  width: 940px;
+}
+
+@media (max-width: 767px) {
+  /* line 111, ../sass/app.scss */
+  #logo-box img {
+    height: 120px;
   }
 }

@@ -59,14 +59,24 @@ body {
 nav {
     color: #000;
     background-color: #fff;
+    padding: 4px 0 0 9px; /* .sub-nav has some stupid margins */
 
-    ul {
-        padding: 5px;
+    dl {
+        padding-top: 5px;
         z-index: 30;
         background-color: #fff;
         width: 100%;
         max-width: 626px; /* 940 * (2/3) */
         margin-bottom: 0;
+
+        &.subnav {
+        
+            margin-bottom: 0;
+        }
+    }
+
+    dd {
+        display: inline;
     }
 
     li {

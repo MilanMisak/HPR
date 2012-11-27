@@ -5902,66 +5902,69 @@ nav {
 }
 /* line 64, ../sass/app.scss */
 nav dl {
-  padding-top: 5px;
   z-index: 30;
   background-color: #fff;
-  width: 100%;
   max-width: 626px;
   /* 940 * (2/3) */
   margin-bottom: 0;
 }
-/* line 72, ../sass/app.scss */
-nav dl.subnav {
-  margin-bottom: 0;
+/* line 70, ../sass/app.scss */
+nav dl.sub-nav {
+  padding-top: 15px;
+  border-bottom: 1px solid #efefef;
 }
-/* line 78, ../sass/app.scss */
+/* line 76, ../sass/app.scss */
 nav dd {
   display: inline;
 }
-/* line 82, ../sass/app.scss */
+/* line 79, ../sass/app.scss */
+nav dd:first-child {
+  margin-left: 0;
+}
+/* line 84, ../sass/app.scss */
 nav li {
   display: inline;
 }
-/* line 85, ../sass/app.scss */
+/* line 87, ../sass/app.scss */
 nav li.active {
   font-weight: bold;
 }
 
 @media (max-width: 767px) {
-  /* line 91, ../sass/app.scss */
+  /* line 93, ../sass/app.scss */
   header {
     padding-top: 20px;
     text-align: center;
   }
-  /* line 96, ../sass/app.scss */
+  /* line 98, ../sass/app.scss */
   header h1 {
     font-size: 150%;
   }
-  /* line 100, ../sass/app.scss */
+  /* line 102, ../sass/app.scss */
   header h3 {
     font-size: 120%;
   }
 }
 @media (min-width: 768px) {
-  /* line 91, ../sass/app.scss */
+  /* line 93, ../sass/app.scss */
   header {
     padding-top: 70px;
   }
 }
 
-/* line 109, ../sass/app.scss */
+/* line 111, ../sass/app.scss */
 h1, h3 {
   color: #dedede;
   text-shadow: 1px 1px #222;
 }
 
-/* line 114, ../sass/app.scss */
+/* line 116, ../sass/app.scss */
 .row {
   width: 940px;
 }
 
 @media (max-width: 767px) {
-  /* line 121, ../sass/app.scss */
+  /* line 123, ../sass/app.scss */
   #logo-box img {
     height: 120px;
   }

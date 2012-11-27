@@ -5959,12 +5959,17 @@ h1, h3 {
 }
 
 /* line 116, ../sass/app.scss */
+h6 {
+  margin-bottom: 0;
+}
+
+/* line 120, ../sass/app.scss */
 .row {
   width: 940px;
 }
 
 @media (max-width: 767px) {
-  /* line 123, ../sass/app.scss */
+  /* line 127, ../sass/app.scss */
   #logo-box img {
     height: 120px;
   }
